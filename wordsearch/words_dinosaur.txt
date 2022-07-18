@@ -1,0 +1,11 @@
+tyrannosaurus
+velociraptor
+stegosaurus
+spinosaurus
+archaeopteryx
+brachiosaurus
+allosaurus
+pterodactyl
+brontosaurus
+ichthyosaur
+triceratops

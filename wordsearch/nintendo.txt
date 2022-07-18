@@ -1,0 +1,39 @@
+['R' 'Y' 'G' 'W' 'I' 'C' 'C' 'N' 'C' 'U' 'I' 'M' 'E' 'A' 'T' 'P' 'L' 'U']
+['G' 'A' 'O' 'T' 'A' 'N' 'A' 'L' 'M' 'R' 'A' 'U' 'I' 'O' 'O' 'O' 'A' 'S']
+['R' 'O' 'I' 'S' 'O' 'L' 'G' 'E' 'E' 'M' 'O' 'S' 'A' 'N' 'A' 'M' 'C' 'A']
+['L' 'G' 'A' 'P' 'H' 'A' 'U' 'P' 'U' 'A' 'E' 'H' 'O' 'B' 'D' 'R' 'G' 'M']
+['N' 'P' 'L' 'I' 'L' 'I' 'D' 'I' 'M' 'P' 'C' 'R' 'R' 'O' 'G' 'U' 'O' 'U']
+['L' 'O' 'L' 'U' 'I' 'G' 'I' 'E' 'G' 'I' 'P' 'O' 'D' 'W' 'G' 'U' 'P' 'S']
+['M' 'I' 'L' 'N' 'C' 'L' 'N' 'P' 'T' 'I' 'I' 'O' 'O' 'S' 'K' 'I' 'O' 'M']
+['N' 'L' 'P' 'N' 'A' 'L' 'A' 'P' 'E' 'T' 'C' 'M' 'N' 'E' 'I' 'A' 'O' 'C']
+['R' 'P' 'P' 'U' 'N' 'L' 'C' 'R' 'C' 'A' 'E' 'U' 'K' 'R' 'R' 'M' 'I' 'G']
+['M' 'I' 'A' 'L' 'A' 'U' 'I' 'I' 'E' 'M' 'C' 'M' 'E' 'O' 'B' 'L' 'G' 'U']
+['P' 'Z' 'L' 'L' 'C' 'A' 'A' 'N' 'W' 'D' 'L' 'H' 'Y' 'M' 'Y' 'I' 'G' 'N']
+['E' 'E' 'E' 'L' 'N' 'P' 'P' 'C' 'A' 'A' 'I' 'P' 'K' 'A' 'R' 'E' 'O' 'U']
+['M' 'M' 'O' 'L' 'N' 'U' 'N' 'E' 'R' 'I' 'C' 'O' 'O' 'R' 'I' 'L' 'A' 'I']
+['R' 'C' 'R' 'I' 'D' 'E' 'M' 'S' 'I' 'S' 'M' 'E' 'N' 'I' 'C' 'O' 'U' 'N']
+['G' 'L' 'P' 'U' 'G' 'A' 'R' 'S' 'O' 'Y' 'A' 'O' 'G' 'O' 'N' 'N' 'U' 'L']
+['U' 'R' 'E' 'E' 'E' 'E' 'G' 'U' 'C' 'A' 'L' 'M' 'I' 'G' 'A' 'R' 'C' 'M']
+['U' 'L' 'E' 'N' 'U' 'O' 'G' 'O' 'I' 'N' 'C' 'N' 'G' 'G' 'L' 'R' 'N' 'I']
+['P' 'C' 'A' 'P' 'P' 'Y' 'N' 'A' 'L' 'C' 'L' 'I' 'N' 'K' 'C' 'R' 'C' 'E']
+
+
+DONKEYKONG Length=10; Start X,Y=5, 12; Direction=ACROSS
+PRINCESS Length=8; Start X,Y=7, 7; Direction=ACROSS
+MUSHROOM Length=8; Start X,Y=0, 11; Direction=ACROSS
+TOADETTE Length=8; Start X,Y=1, 3; Direction=DIAGONAL
+WALUIGI Length=7; Start X,Y=0, 3; Direction=DIAGONAL
+BOWSER Length=6; Start X,Y=3, 13; Direction=ACROSS
+MARIO Length=5; Start X,Y=10, 13; Direction=ACROSS
+LUIGI Length=5; Start X,Y=5, 2; Direction=DOWN
+PEACH Length=5; Start X,Y=6, 7; Direction=DIAGONAL
+DAISY Length=5; Start X,Y=10, 9; Direction=ACROSS
+YOSHI Length=5; Start X,Y=0, 1; Direction=DIAGONAL
+KIRBY Length=5; Start X,Y=6, 14; Direction=ACROSS
+WARIO Length=5; Start X,Y=10, 8; Direction=ACROSS
+ZELDA Length=5; Start X,Y=10, 1; Direction=DIAGONAL
+SAMUS Length=5; Start X,Y=1, 17; Direction=ACROSS
+CAPPY Length=5; Start X,Y=17, 1; Direction=DOWN
+TOAD Length=4; Start X,Y=0, 14; Direction=ACROSS
+LINK Length=4; Start X,Y=17, 10; Direction=DOWN
+MII Length=3; Start X,Y=4, 8; Direction=DIAGONAL

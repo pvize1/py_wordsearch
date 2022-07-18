@@ -1,0 +1,15 @@
+magenta
+yellow
+purple
+orange
+silver
+black
+brown
+white
+green
+blue
+grey
+gold
+cyan
+pink
+red
