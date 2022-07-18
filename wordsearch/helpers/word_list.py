@@ -4,8 +4,6 @@ in the Word_Grid
 """
 
 from collections import Counter
-import wordsearch.words_list as wl
-from pathlib import Path
 
 
 class WordData:
@@ -56,7 +54,7 @@ class WordData:
 class WordList:
     """ WordList class """
 
-    def __init__(self, passed_list=None, infile="", wordlist=""):
+    def __init__(self, iter_words):
         """
         """
         self._word_data = []
@@ -67,23 +65,12 @@ class WordList:
         self._word_count = 0
         self._return_code = 0
 
-        if wordlist:
-            raw_word_list = self._check_wordlist(wordlist)
-        elif infile:
-            raw_word_list = self._check_infile(infile)
-        else:
-            raw_word_list = self._check_passed_list(passed_list)
-
-        if len(raw_word_list) == 0:
-            raise ValueError("Word list is empty")
-
-        iter_words = self._gen_word_list(raw_word_list)
         for word in iter_words:
             wd_data = WordData(word)
             self._word_data.append(wd_data)
             self._all_freq_data_dict += wd_data.freq_dict
+            self._word_count += 1
 
-        self._word_count = len(self._word_data)
         if self._word_count > 0:
             self._word_data.sort(key=lambda wd: wd.length, reverse=True)
             self._longest_word = self._word_data[0].word
@@ -100,49 +87,6 @@ class WordList:
     def __iter__(self):
         print("WordList __iter__ called")
         return iter(self._word_data)
-
-    @staticmethod
-    def _gen_word_list(list_of_words):
-        """
-        Generator to go through list of words passed,
-        Generator validates (greater than 2 chars and only alpha) and cleans (trim, upper) the words
-
-        Args:
-            list_of_words (list):
-
-        Returns: Yields a cleaned and valid word
-        """
-        for word in list_of_words:
-            clean_word = str(word).upper().strip()
-            if len(clean_word) > 2 and str(clean_word).isalpha():
-                yield clean_word
-
-    @staticmethod
-    def _check_infile(infile):
-        print(f"Source: Input file={infile}")
-        try:
-            in_file = open(infile, "r")
-            return in_file.readlines()
-        except FileNotFoundError:
-            raise FileNotFoundError(f"The input file '{infile}' not found")
-
-    @staticmethod
-    def _check_passed_list(passed_list):
-        if passed_list is None:
-            return []
-        if isinstance(passed_list, list):
-            print(f"Source: Passed list")
-            return passed_list
-        else:
-            raise TypeError("Passed list not a list")
-
-    @staticmethod
-    def _check_wordlist(wordlist):
-        if wordlist in wl.word_list_dict:
-            print(f"Source: Word list={wordlist}")
-            return wl.word_list_dict[wordlist]
-        else:
-            raise TypeError("Word list not word_list dictionary")
 
     @property
     def letter_freq(self):

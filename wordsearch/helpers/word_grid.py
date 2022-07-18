@@ -32,15 +32,12 @@ class WordGrid:
         MEDIUM = 1
         HARD = 2
 
-    def __init__(self, level=LevelInt.EASY, lvl_string=""):
+    def __init__(self, level=LevelInt.EASY):
         """
         Args:
             level (IntEnum):
         """
         print("\ninit start=", datetime.now(tz=None))
-        level_conv_dict = {"E": 0, "EASY": 0, "M": 1, "MEDIUM": 1, "H": 2, "HARD": 2}
-        if lvl_string in level_conv_dict:
-            level = self.LevelInt(level_conv_dict[lvl_string])
         self._word_grid = np.full((1, 1), " ")
         self._level = self.LevelInt(level)
         print(f"Level = {self._level.name}")
