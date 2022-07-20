@@ -70,9 +70,6 @@ def handle_args():
     else:
         raise SyntaxError("No list of words provided on command line")
 
-    if len(raw_word_list) == 0:
-        raise ValueError("Word list is empty")
-
     return args.level, gen_word_list(raw_word_list)
 
 
