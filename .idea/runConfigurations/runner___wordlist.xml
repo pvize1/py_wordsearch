@@ -22,7 +22,7 @@
         <ENTRY IS_ENABLED="true" PARSER="runconfig" />
       </ENTRIES>
     </EXTENSION>
-    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wordsearch/runner.py" />
+    <option name="SCRIPT_NAME" value="C:\Users\peter\PycharmProjects\wordsearch\wordsearch\word_search.py" />
     <option name="PARAMETERS" value="-w disney -l 1" />
     <option name="SHOW_COMMAND_LINE" value="false" />
     <option name="EMULATE_TERMINAL" value="false" />
