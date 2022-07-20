@@ -65,8 +65,10 @@ def handle_args():
 
     if args.words:
         raw_word_list = check_wordlist(args.words)
-    else:
+    elif args.infile:
         raw_word_list = check_infile(args.infile)
+    else:
+        raise SyntaxError("No list of words provided on command line")
 
     if len(raw_word_list) == 0:
         raise ValueError("Word list is empty")
