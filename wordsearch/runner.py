@@ -42,12 +42,25 @@ def gen_word_list(list_of_words):
 
 
 def handle_args():
-    parser = argparse.ArgumentParser(description='Create wordsearch grid from list of words')
-    parser.add_argument('-l', '--level', action='store', choices={0, 1, 2}, type=int, default=0,
-                        help='difficulty level 0=easy, 3=hard')
+    parser = argparse.ArgumentParser(
+        description="Create wordsearch grid from list of words"
+    )
+    parser.add_argument(
+        "-l",
+        "--level",
+        action="store",
+        choices={0, 1, 2},
+        type=int,
+        default=0,
+        help="difficulty level 0=easy, 3=hard",
+    )
     group = parser.add_mutually_exclusive_group()
-    group.add_argument('-w', '--words', dest='words', help='Key of list in word_list.py')
-    group.add_argument('-i', '--infile', dest='infile', help='Name of file with word list')
+    group.add_argument(
+        "-w", "--words", dest="words", help="Key of list in word_list.py"
+    )
+    group.add_argument(
+        "-i", "--infile", dest="infile", help="Name of file with word list"
+    )
     args = parser.parse_args()
 
     if args.words:
